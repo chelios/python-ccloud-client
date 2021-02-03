@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from sys import stdout
 from pathlib import Path
@@ -20,7 +20,7 @@ auth_url = 'https://api.cloud.catalyst.net.nz:5000/v3'
 config_file = ".config/ccloud-client/config.json"
 tools_dir = 'ccloud_client'
 
-script_text = '''#!/usr/bin/env python
+script_text = '''#!/usr/bin/env python3
 
 from sys import stdout
 from pathlib import Path
