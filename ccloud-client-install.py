@@ -212,7 +212,7 @@ def create_os_launcher():
     script_locn = f"{p}/{ccloud_launcher}"
     with open(script_locn, 'w') as fh:
         fh.write(script_text)
-\s    os.chmod(script_locn, stat.S_IRWXU | stat.S_IRGRP | stat.S_IWGRP)
+    os.chmod(script_locn, stat.S_IRWXU | stat.S_IRGRP | stat.S_IWGRP)
     return p
 
 
