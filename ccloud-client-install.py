@@ -19,6 +19,7 @@ alias = 'ccloud'
 auth_url = 'https://api.cloud.catalyst.net.nz:5000/v3'
 config_file = ".config/ccloud-client/config.json"
 tools_dir = 'ccloud_client'
+dockerlink = 'https://docs.docker.com/engine/install/'+
 
 script_text = '''#!/usr/bin/env python3
 
@@ -211,7 +212,7 @@ def create_os_launcher():
     script_locn = f"{p}/{ccloud_launcher}"
     with open(script_locn, 'w') as fh:
         fh.write(script_text)
-    os.chmod(script_locn, stat.S_IRWXU | stat.S_IRGRP | stat.S_IWGRP)
+\s    os.chmod(script_locn, stat.S_IRWXU | stat.S_IRGRP | stat.S_IWGRP)
     return p
 
 
