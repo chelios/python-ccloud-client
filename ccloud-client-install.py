@@ -19,7 +19,7 @@ alias = 'ccloud'
 auth_url = 'https://api.cloud.catalyst.net.nz:5000/v3'
 config_file = ".config/ccloud-client/config.json"
 tools_dir = 'ccloud_client'
-dockerlink = 'https://docs.docker.com/engine/install/'+
+dockerlink = 'https://docs.docker.com/engine/install/'
 
 script_text = '''#!/usr/bin/env python3
 
