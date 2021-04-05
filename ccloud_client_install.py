@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 
-from sys import stdout
 from pathlib import Path
 
-import argparse
 import os
 import sys
 import re
-import urllib.request
 import shutil
 import json
 import stat
@@ -164,6 +161,7 @@ if __name__ == '__main__':
     run_container(args)
 '''
 
+
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -248,6 +246,7 @@ def notify_user(alias):
               {bcolors.ENDC}'''
     print(msg)
 
+
 if __name__ == '__main__':
 
     check_docker_exists()
@@ -261,7 +260,7 @@ if __name__ == '__main__':
     fp = Path(Path.home(), '.bashrc')
 
     if Path.exists(fp):
-       update_alias(fp, full_alias, alias_regex)
+        update_alias(fp, full_alias, alias_regex)
     #    update_path(fp, path_regex, script_path)
 
     notify_user(alias)

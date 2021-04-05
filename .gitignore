@@ -1,2 +1,3 @@
 t*.md
 .vscode
+__pycache__

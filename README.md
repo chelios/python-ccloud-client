@@ -32,6 +32,35 @@ python3 <(curl -s - https://raw.githubusercontent.com/chelios/python-ccloud-clie
 To provide the Catalyst Cloud command line tools pre-installed, with all of it's dependencies, in a
 docker container.
 
+## Container details
+
+The tool imports a preconfigured container from the Docker Hub repository
+[catalystcloud / ccloud-client_container](https://hub.docker.com/repository/docker/catalystcloud/ccloud-client_container)
+
+If you were to inspect your local copy and query the labels you can see which version of each Openstack client tool was loaded into this particular container version.
+
+``` shell
+$ docker inspect catalystcloud/ccloud-client_container:latest | jq -r '.[0].Config.Labels' \
+  | grep "org.label-schema" | grep -v vendor | sed 's/org.label-schema.//g'
+
+  "aodhclient": "2.2.0",
+  "ceilometerclient": "2.9.0",
+  "cinderclient": "7.4.0",
+  "glanceclient": "3.3.0",
+  "heatclient": "2.3.0",
+  "keystoneclient": "4.2.0",
+  "magnumclient": "3.4.0",
+  "neutronclient": "7.3.0",
+  "novaclient": "17.4.0",
+  "octaviaclient": "2.3.0",
+  "openstackclient": "5.5.0",
+  "openstacksdk": "0.55.0",
+  "schema-version": "1.0",
+  "swiftclient": "3.11.1",
+  "troveclient": "7.0.0",
+
+```
+
 ### The Installer Script
 The purpose of this script (__fetch-installer.py__) is to simplify the process of obtaining and
 configuring the Catalyst Cloud container. The command shown below is going to download a copy of
