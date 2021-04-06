@@ -17,14 +17,14 @@ simply run the following install command from a Linux shell to have a copy insta
 <a name="install-command-wget">
 
 ```
-python3 <(wget -qO - https://raw.githubusercontent.com/chelios/python-ccloud-client/master/fetch-installer.py) -a ccloud -u https://api.cloud.catalyst.net.nz:5000/v3
+python3 <(wget -qO - https://raw.githubusercontent.com/chelios/python-ccloud-client/master/fetch_installer.py) -a ccloud -u https://api.cloud.catalyst.net.nz:5000/v3
 ```
 </a>
 
 <a name="install-command-curl">
 
 ```
-python3 <(curl -s - https://raw.githubusercontent.com/chelios/python-ccloud-client/master/fetch-installer.py) -a ccloud -u https://api.cloud.catalyst.net.nz:5000/v3
+python3 <(curl -s - https://raw.githubusercontent.com/chelios/python-ccloud-client/master/fetch_installer.py) -a ccloud -u https://api.cloud.catalyst.net.nz:5000/v3
 ```
 </a>
 
