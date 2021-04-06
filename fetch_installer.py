@@ -15,7 +15,7 @@ tools_dir = 'ccloud_client'
 config_dir = '.config/ccloud-client/'
 config_file = 'config.json'
 credentials_file = 'credentials'
-script_name = 'ccloud-client-install.py'
+script_name = 'ccloud_client_install.py'
 script_url = 'https://raw.githubusercontent.com/chelios/python-ccloud-client/master/ccloud-client-install.py'
 
 class bcolors:
